@@ -61,12 +61,12 @@ export const ContactSection: React.FC = () => {
   };
 
   const galleryStills = [
-    { url: '/assets/1.webp', alt: 'Brand Ad - Film Still (Fufua Portfolio)' },
-    { url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop', alt: 'SOCKS - Monochrome 35mm Character Study' },
-    { url: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800&auto=format&fit=crop', alt: 'I Love Ugly - Red Neon Reflection' },
-    { url: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800&auto=format&fit=crop', alt: 'Reference Frame - Studio Lighting' },
-    { url: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop', alt: 'Behind the Scenes - Camera Operation' },
-    { url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop', alt: 'Reference Frame - Location Portrait' }
+    { url: '/assets/1.webp', alt: 'Fufua Brand Ad' },
+    { url: '/assets/travel_akoso.webp', alt: 'Travel — Akosombo' },
+    { url: '/assets/podcast_tyrone.webp', alt: 'Podcast Studio Setup' },
+    { url: '/assets/corporate_africa.webp', alt: 'Corporate Documentation' },
+    { url: '/assets/selected_work_montage_poster.webp', alt: 'Selected Work Montage' },
+    { url: '/assets/FUFUA_collection_full_poster.webp', alt: 'Fufua Collection' }
   ];
 
   return (

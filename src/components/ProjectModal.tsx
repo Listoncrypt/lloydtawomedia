@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Project } from '../types';
 import { X, Play, Award, Aperture, Share2, Check } from 'lucide-react';
 import { LaurelBadge } from './LaurelBadge';
+import { ExpandableDescription } from './ExpandableDescription';
 
 interface ProjectModalProps {
   project: Project | null;
@@ -130,9 +131,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 </h2>
               </div>
 
-              <p className="text-zinc-300 leading-relaxed text-xs sm:text-sm">
-                {project.description}
-              </p>
+              <ExpandableDescription description={project.description} />
 
               {project.synopsis && (
                 <div className="p-4 bg-zinc-950 border border-zinc-800 space-y-1">

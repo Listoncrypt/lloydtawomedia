@@ -30,7 +30,7 @@ export const HeroReel: React.FC<HeroReelProps> = ({
 
               {/* Cinema Still / Showcase Image */}
               <img
-                src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1600&auto=format&fit=crop"
+                src="/assets/selected_work_montage_poster.webp"
                 alt="Lloyd Tawo Cinematography Showreel Preview"
                 className="w-full h-full object-cover grayscale-[15%] contrast-105 group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"

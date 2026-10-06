@@ -6,10 +6,6 @@ export const CATEGORY_ORDER: ProjectCategory[] = [
   'travel',
   'corporate',
   'podcast',
-  'narrative',
-  'documentary',
-  'music',
-  'commercial',
 ];
 
 export const CATEGORY_LABELS: Record<ProjectCategory, string> = {
@@ -38,7 +34,9 @@ export const PROJECTS_DATA: Project[] = [
     camera: 'Various',
     lenses: 'Various',
     aspectRatio: '16:9',
-    description: 'A montage of selected cinematography work.',
+    description: `A multi-format content production created for Tyrone across Ghana. The project brought together podcast production, travel content, commercial work and behind-the-scenes production, giving me the opportunity to work across different visual styles and formats for the same client.
+
+I was involved throughout the production process — from setting up the podcast studio and developing the visual environment, to cinematography, location production and post-production. This montage brings those different projects together to show the range of work delivered across the engagement.`,
     awards: [],
     thumbnail: '/assets/selected_work_montage_poster.webp',
     previewVideo: '/assets/selected_work_montage.mp4',
@@ -61,7 +59,7 @@ export const PROJECTS_DATA: Project[] = [
     camera: '',
     lenses: '',
     aspectRatio: '16:9',
-    description: 'Fufua Portfolio brand advertising campaign.',
+    description: `A commercial piece created for Fufua, Tyrone’s fashion brand in Ghana. The concept was built around turning the brand’s products into part of the visual story rather than simply presenting them. I handled the cinematography and post-production, using movement, styling and visual transitions to create a polished fashion-focused piece.`,
     awards: [],
     thumbnail: '/assets/1.webp',
     previewVideo: '/assets/FUFUA_portfolio.mp4',
@@ -73,6 +71,7 @@ export const PROJECTS_DATA: Project[] = [
         url: '/assets/FUFUA_collection_full.mp4',
         title: 'FUFUA COLLECTION — FULL VIDEO',
         poster: '/assets/FUFUA_collection_full_poster.webp',
+        description: `A commercial piece created for Fufua, Tyrone’s fashion brand in Ghana. The concept was built around turning the brand’s products into part of the visual story rather than simply presenting them. I handled the cinematography and post-production, using movement, styling and visual transitions to create a polished fashion-focused piece.`,
         revealStills: [
           '/assets/Still013.webp',
           '/assets/Still014.webp',
@@ -84,6 +83,7 @@ export const PROJECTS_DATA: Project[] = [
         url: '/assets/diopter_video.mp4',
         title: 'DIOPTER VIDEO',
         poster: '/assets/diopter_poster.webp',
+        description: `A self-directed product film created to demonstrate the creative possibilities of a lens diopter. Rather than simply explaining the accessory, I used the piece to show how it changes the way a camera can capture a subject, bringing attention to close-up details, depth and focus.`,
         orientation: 'portrait',
         position: 'after-stills'
       }
@@ -92,39 +92,6 @@ export const PROJECTS_DATA: Project[] = [
     featured: true,
     tags: ['Brand', 'Commercial'],
     colorPalette: ['#000000', '#333333', '#ffffff']
-  },
-  {
-    id: 'kura-series',
-    itemNumber: '26',
-    format: 'TV SERIES',
-    title: 'KURA',
-    year: '2019-2023',
-    category: 'narrative',
-    categoryLabel: 'TV Series / Drama Comedy (Seasons 1-3)',
-    director: 'Vince McMillan',
-    productionCompany: 'TVNZ / Steely DNA',
-    camera: 'Arri Alexa Mini & Sony Venice',
-    lenses: 'Panavision Primos & Gecko Genesis G35 Primes',
-    aspectRatio: '16:9',
-    description: 'The award-winning South Auckland drama series. Winner of Sydney Web Fest Best Cinematography, NZCS Gold and Silver Awards.',
-    synopsis: 'A heartfelt, comedic, and culturally authentic portrait of life in Papakura, following Billy-John and his crew as they hustle to make their dreams come true.',
-    awards: [
-      'Winner: Sydney Web Fest (Best Cinematography)',
-      'Gold: NZCS Awards (Webseries / Drama)',
-      'Silver: NZCS Awards (TV Series)',
-      'Finalist: NZTV Awards (Best Cinematography)'
-    ],
-    thumbnail: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1600&auto=format&fit=crop',
-    previewVideo: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    videoUrl: 'https://player.vimeo.com/video/282875052?autoplay=1&muted=1&loop=1',
-    embedId: '282875052',
-    stills: [
-      'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1600&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1600&auto=format&fit=crop'
-    ],
-    featured: true,
-    tags: ['TVNZ Hit Series', 'Papakura', 'Handheld Realism', 'Multi-Award Winner'],
-    colorPalette: ['#1c1917', '#44403c', '#ca8a04', '#eab308', '#fef08a']
   },
   {
     id: 'travel',
@@ -139,7 +106,9 @@ export const PROJECTS_DATA: Project[] = [
     camera: '',
     lenses: '',
     aspectRatio: '16:9',
-    description: 'Travel cinematography.',
+    description: `A travel film created for Tyrone as part of his Ghana travel series, focused on showcasing Akosombo beyond the usual Accra experience. I handled the cinematography and post-production, shaping the footage into a visually driven story that balanced the destination’s landscapes, atmosphere and Tyrone’s on-camera narrative.
+
+This piece was about making Akosombo feel like more than just another destination. I approached the cinematography around atmosphere, landscapes and the quieter moments of the trip, then built the edit around Tyrone’s commentary to create a strong sense of place.`,
     awards: [],
     thumbnail: '/assets/travel_akoso.webp',
     previewVideo: '/assets/travel_akoso.mp4',
@@ -149,24 +118,36 @@ export const PROJECTS_DATA: Project[] = [
         url: '/assets/travel_cape_coast.mp4',
         title: 'CAPE COAST',
         poster: '/assets/travel_cape_coast_poster.webp',
+        description: `A documentary-style travel film for Tyrone’s Ghana series, exploring Cape Coast and its historical significance to Ghana and the African diaspora. I handled the cinematography and post-production, combining location footage, interviews and visual storytelling to support the historical narrative.
+
+For this episode, the challenge was balancing a visually engaging travel film with a subject carrying significant historical weight. I used the cinematography and edit to let the location speak for itself while giving Tyrone’s reflections room to carry the story.`,
         position: 'before-stills'
       },
       {
         url: '/assets/travel_wli_falls.mp4',
         title: 'WLI FALLS',
         poster: '/assets/travel_wli_falls.webp',
+        description: `Part of Tyrone’s Ghana travel series, this film documents his visit to Wli Falls in the Volta Region. I handled the cinematography and post-production, capturing both the journey to the location and the experience of the destination while maintaining the visual style of the wider series.
+
+This was a location-driven piece, with much of the storytelling coming from the journey itself and the scale of Wli Falls. I focused on capturing the movement, environment and progression of the experience, giving the edit a natural sense of build-up before arriving at the falls.`,
         position: 'before-stills'
       },
       {
         url: '/assets/travel_kano.mp4',
         title: 'KANO',
         poster: '/assets/travel_kano_poster.webp',
+        description: `A travel film produced for Mary documenting her exploration of Kano and its cultural and historical landmarks, including the ancient dye pits and Emir’s Palace. I handled the cinematography and post-production, shaping the location footage into a cohesive visual story.
+
+Kano presented a very different storytelling challenge: a city with layers of history, culture and visual detail. I brought together locations including the dye pits and Emir’s Palace into one cohesive film, using the edit to connect the different experiences rather than treating them as separate stops.`,
         position: 'before-stills'
       },
       {
         url: '/assets/travel_bauchi.mp4',
         title: 'BAUCHI',
         poster: '/assets/travel_bauchi_poster.webp',
+        description: `A travel film produced for Mary as part of her Nigeria travel content. I handled the cinematography and post-production, using a combination of location coverage, environmental shots and narrative-driven editing to build the final piece.
+
+Working in a game reserve meant approaching the edit differently — allowing the environment, wildlife and quieter moments to breathe. The film relies heavily on observational footage and natural atmosphere to make the viewer feel present within the experience.`,
         position: 'before-stills'
       }
     ],
@@ -174,35 +155,6 @@ export const PROJECTS_DATA: Project[] = [
     featured: true,
     tags: ['Travel'],
     colorPalette: ['#000000', '#333333', '#ffffff']
-  },
-  {
-    id: 'breathe-short',
-    itemNumber: '27',
-    format: 'SHORT FILM',
-    title: 'BREATHE',
-    year: 2022,
-    category: 'narrative',
-    categoryLabel: 'Short Film',
-    director: 'Stephen Kang',
-    productionCompany: 'Curative / NZ Film Commission',
-    camera: 'Arri Alexa Mini',
-    lenses: 'Kowa Prominar 2x Anamorphic',
-    aspectRatio: '2.39:1',
-    description: 'Premiered at Sundance Film Festival 2022. A haunting psychological short film exploring isolation, water textures, and ethereal backlighting.',
-    synopsis: 'A gifted young girl raised in an unconventional spiritual commune discovers the inner strength to confront the forces controlling her life.',
-    awards: ['Sundance Film Festival Official Selection 2022', 'Clermont-Ferrand Film Festival Entry'],
-    laurels: ['SUNDANCE 2022'],
-    thumbnail: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1600&auto=format&fit=crop',
-    previewVideo: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
-    videoUrl: 'https://player.vimeo.com/video/282875052?autoplay=1&muted=1&loop=1',
-    embedId: '282875052',
-    stills: [
-      'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1600&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop'
-    ],
-    featured: true,
-    tags: ['Sundance Selection', 'Anamorphic Flares', 'Psychological Drama'],
-    colorPalette: ['#082f49', '#0369a1', '#0284c7', '#38bdf8', '#f0f9ff']
   },
   {
     id: 'podcast',
@@ -217,7 +169,9 @@ export const PROJECTS_DATA: Project[] = [
     camera: '',
     lenses: '',
     aspectRatio: '16:9',
-    description: 'Podcast and talking-head cinematography.',
+    description: `A long-form podcast and talking-head series created for Tyrone, focused on helping members of the African diaspora understand life, business and opportunities in Ghana. Episodes cover everything from investment and relocation to cultural differences, business experiences and the realities of building a life in Ghana.
+
+I handled the production from the ground up — including studio setup, lighting, camera operation, audio and post-production. The edit was built to keep long-form conversations engaging while maintaining a clean, consistent visual style across the series.`,
     awards: [],
     heroOrientation: 'portrait',
     thumbnail: '/assets/podcast_tyrone.webp',
@@ -228,27 +182,42 @@ export const PROJECTS_DATA: Project[] = [
       {
         url: '/assets/podcast_synced_sequence.mp4',
         poster: '/assets/podcast_synced_sequence.webp',
+        description: `A long-form podcast and talking-head series created for Tyrone, focused on helping members of the African diaspora understand life, business and opportunities in Ghana. Episodes cover everything from investment and relocation to cultural differences, business experiences and the realities of building a life in Ghana.
+
+I handled the production from the ground up — including studio setup, lighting, camera operation, audio and post-production. The edit was built to keep long-form conversations engaging while maintaining a clean, consistent visual style across the series.`,
         position: 'before-stills'
       },
       {
         url: '/assets/podcast_dela_pod.mp4',
         poster: '/assets/podcast_dela_pod_poster.webp',
+        description: `A long-form podcast and talking-head series created for Tyrone, focused on helping members of the African diaspora understand life, business and opportunities in Ghana. Episodes cover everything from investment and relocation to cultural differences, business experiences and the realities of building a life in Ghana.
+
+I handled the production from the ground up — including studio setup, lighting, camera operation, audio and post-production. The edit was built to keep long-form conversations engaging while maintaining a clean, consistent visual style across the series.`,
         position: 'before-stills'
       },
       {
         url: '/assets/podcast_dela_port.mp4',
         poster: '/assets/podcast_dela_port_poster.webp',
+        description: `A long-form podcast and talking-head series created for Tyrone, focused on helping members of the African diaspora understand life, business and opportunities in Ghana. Episodes cover everything from investment and relocation to cultural differences, business experiences and the realities of building a life in Ghana.
+
+I handled the production from the ground up — including studio setup, lighting, camera operation, audio and post-production. The edit was built to keep long-form conversations engaging while maintaining a clean, consistent visual style across the series.`,
         position: 'before-stills'
       },
       {
         url: '/assets/podcast_relocate_g.mp4',
         poster: '/assets/podcast_relocate_g_poster.webp',
+        description: `A long-form podcast and talking-head series created for Tyrone, focused on helping members of the African diaspora understand life, business and opportunities in Ghana. Episodes cover everything from investment and relocation to cultural differences, business experiences and the realities of building a life in Ghana.
+
+I handled the production from the ground up — including studio setup, lighting, camera operation, audio and post-production. The edit was built to keep long-form conversations engaging while maintaining a clean, consistent visual style across the series.`,
         position: 'before-stills'
       },
       {
         url: '/assets/podcast_ghana.mp4',
         title: 'HOW TO MOVE SMART IN GHANA — TRAILER',
         poster: '/assets/podcast_ghana.webp',
+        description: `A long-form podcast and talking-head series created for Tyrone, focused on helping members of the African diaspora understand life, business and opportunities in Ghana. Episodes cover everything from investment and relocation to cultural differences, business experiences and the realities of building a life in Ghana.
+
+I handled the production from the ground up — including studio setup, lighting, camera operation, audio and post-production. The edit was built to keep long-form conversations engaging while maintaining a clean, consistent visual style across the series.`,
         orientation: 'portrait',
         position: 'before-stills'
       },
@@ -256,6 +225,9 @@ export const PROJECTS_DATA: Project[] = [
         url: '/assets/podcast_inspiredbyirene.mp4',
         title: 'INSPIRED BY IRENE — INTRO',
         poster: '/assets/podcast_inspiredbyirene_poster.webp',
+        description: `An educational content series created for Inspired by Irene, covering topics around teaching, parenting, schools and the development of young people. The content explores the responsibilities of teachers and parents while offering practical perspectives on creating better learning environments.
+
+I handled the production and post-production, shaping the talking-head content into short, accessible videos designed for social platforms while keeping the presentation clear, engaging and consistent across the series.`,
         orientation: 'portrait',
         position: 'before-stills'
       },
@@ -263,6 +235,7 @@ export const PROJECTS_DATA: Project[] = [
         url: '/assets/podcast_shape_light.mp4',
         title: 'SHAPE LIGHT',
         poster: '/assets/podcast_shape_light_poster.webp',
+        description: `A practical cinematography piece exploring how natural light can be shaped and controlled to create a more intentional image. I used a simple location and available light to demonstrate how changes in direction, positioning and control can transform the look and feel of a shot.`,
         orientation: 'portrait',
         position: 'before-stills'
       },
@@ -270,6 +243,9 @@ export const PROJECTS_DATA: Project[] = [
         url: '/assets/podcast_ep57.mp4',
         title: 'EPISODE 57',
         poster: '/assets/podcast_ep57_poster.webp',
+        description: `An educational content series created for Inspired by Irene, covering topics around teaching, parenting, schools and the development of young people. The content explores the responsibilities of teachers and parents while offering practical perspectives on creating better learning environments.
+
+I handled the production and post-production, shaping the talking-head content into short, accessible videos designed for social platforms while keeping the presentation clear, engaging and consistent across the series.`,
         orientation: 'portrait',
         position: 'before-stills'
       },
@@ -277,6 +253,9 @@ export const PROJECTS_DATA: Project[] = [
         url: '/assets/podcast_ep61.mp4',
         title: 'EPISODE 61',
         poster: '/assets/podcast_ep61_poster.webp',
+        description: `An educational content series created for Inspired by Irene, covering topics around teaching, parenting, schools and the development of young people. The content explores the responsibilities of teachers and parents while offering practical perspectives on creating better learning environments.
+
+I handled the production and post-production, shaping the talking-head content into short, accessible videos designed for social platforms while keeping the presentation clear, engaging and consistent across the series.`,
         orientation: 'portrait',
         position: 'before-stills'
       }
@@ -285,33 +264,6 @@ export const PROJECTS_DATA: Project[] = [
     featured: true,
     tags: ['Podcast', 'Talking Head', 'Interview'],
     colorPalette: ['#000000', '#333333', '#ffffff']
-  },
-  {
-    id: 'miles-from-nowhere',
-    itemNumber: '28',
-    format: '6 PART SERIES',
-    title: 'MILES FROM NOWHERE',
-    year: 2024,
-    category: 'narrative',
-    categoryLabel: '6-Part Comedy-Drama Series',
-    director: 'Ghazaleh Golbakhsh',
-    productionCompany: 'Gibson Group / Prime Video / Sky NZ',
-    camera: 'Sony FX9 & Sony Venice',
-    lenses: 'Zeiss Supreme Primes',
-    aspectRatio: '2.00:1',
-    description: 'A vibrant drama series exploring the Muslim diaspora experience in Auckland suburbs. Warm tungsten lighting and cinematic compositional framing.',
-    synopsis: 'Tariq tries to navigate career ambition, romance, and cultural identity while surviving familial expectations in suburban New Zealand.',
-    awards: ['NZ Web Fest Nominee 2024'],
-    thumbnail: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1600&auto=format&fit=crop',
-    previewVideo: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4',
-    videoUrl: 'https://player.vimeo.com/video/316284024?autoplay=1&muted=1&loop=1',
-    embedId: '316284024',
-    stills: [
-      'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1600&auto=format&fit=crop'
-    ],
-    featured: true,
-    tags: ['Prime Video', 'Sky Open', 'Suburban Auckland', 'Comedy Drama'],
-    colorPalette: ['#3b0764', '#6b21a8', '#a855f7', '#d8b4fe', '#faf5ff']
   },
   {
     id: 'corporate',
@@ -326,7 +278,7 @@ export const PROJECTS_DATA: Project[] = [
     camera: '',
     lenses: '',
     aspectRatio: '16:9',
-    description: 'Corporate cinematography.',
+    description: `Corporate documentation for the Bureau of Public Procurement, covering an off-site engagement where our production team was brought in to document the event and its proceedings. The work focused on capturing the people, environment and key moments of the engagement through a curated set of still images.`,
     awards: [],
     heroOrientation: 'portrait',
     thumbnail: '/assets/corporate_africa.webp',
@@ -342,441 +294,6 @@ export const PROJECTS_DATA: Project[] = [
     featured: true,
     tags: ['Corporate'],
     colorPalette: ['#000000', '#333333', '#ffffff']
-  },
-  {
-    id: 'workmates-film',
-    itemNumber: '06',
-    format: 'FEATURE FILM',
-    title: 'WORKMATES',
-    year: 2025,
-    category: 'narrative',
-    categoryLabel: 'Feature Film / Narrative',
-    director: 'Hamish Bennett',
-    productionCompany: 'Firefly Films / NZ Film Commission',
-    camera: 'Canon C500 Mark II (5.9K Cinema RAW)',
-    lenses: 'DZO Vespid Cinema Primes (16mm to 125mm)',
-    aspectRatio: '2.39:1',
-    description: 'Official selection at Melbourne International Film Festival (MIFF) 2025 and Whānau Mārama NZIFF 2025. Soft daylight, morning mist, and intimate rural character drama.',
-    synopsis: 'Two forestry workers navigate unexpected emotional turbulence during a harsh winter in Northland, New Zealand.',
-    awards: ['MIFF Official Selection 2025', 'Whānau Mārama NZIFF 2025'],
-    laurels: ['MIFF 2025', 'WHĀNAU MĀRAMA 2025'],
-    thumbnail: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop',
-    previewVideo: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
-    videoUrl: 'https://player.vimeo.com/video/146022717?autoplay=1&muted=1&loop=1',
-    embedId: '146022717',
-    stills: [
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop'
-    ],
-    featured: true,
-    tags: ['MIFF Premiere', 'NZIFF', 'Rural NZ Drama', 'Canon RAW'],
-    colorPalette: ['#14532d', '#15803d', '#22c55e', '#86efac', '#f0fdf4']
-  },
-  {
-    id: 'marlon-williams-two-worlds',
-    itemNumber: '07',
-    format: 'DOCUMENTARY',
-    title: 'MARLON WILLIAMS: NGĀ AO E RUA – TWO WORLDS',
-    year: 2025,
-    category: 'documentary',
-    categoryLabel: 'Feature Documentary / Concert Film',
-    director: 'Kath Akuhata-Brown',
-    productionCompany: 'Aroha Productions / NZ On Air',
-    camera: 'Canon C500 Mark II & Arri Alexa Mini',
-    lenses: 'DZO Vespid Cinema Primes & Angenieux EZ Zoom',
-    aspectRatio: '2.00:1',
-    description: 'Winner: Best Camerawork (Documentary) at the 2025 NZ Screen Awards. Official Selection MIFF 2025.',
-    synopsis: 'A lyrical and transcendent feature documentary following international musical icon Marlon Williams as he bridges te ao Māori with symphonic concert halls.',
-    awards: [
-      'Winner: NZ Screen Awards 2025 (Best Camerawork)',
-      'Bronze: NZCS Awards 2025 (Documentary)',
-      'MIFF Official Selection 2025'
-    ],
-    laurels: ['MIFF 2025', 'NZ SCREEN AWARDS 2025'],
-    thumbnail: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600&auto=format&fit=crop',
-    previewVideo: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackSeeTheWorld.mp4',
-    videoUrl: 'https://player.vimeo.com/video/146022717?autoplay=1&muted=1&loop=1',
-    embedId: '146022717',
-    stills: [
-      'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600&auto=format&fit=crop'
-    ],
-    featured: true,
-    tags: ['NZ Screen Awards Winner', 'MIFF 2025', 'Music Documentary', 'Concert Cinema'],
-    colorPalette: ['#18181b', '#27272a', '#e4e4e7', '#f59e0b', '#d97706']
-  },
-  {
-    id: 'socks-short',
-    itemNumber: '08',
-    format: 'SHORT FILM',
-    title: 'SOCKS',
-    year: 2025,
-    category: 'narrative',
-    categoryLabel: 'Narrative Short Film',
-    director: 'James Solomon',
-    productionCompany: 'Firefly Films',
-    camera: 'Arri Alexa Mini LF (Monochrome 35mm)',
-    lenses: 'Cooke Speed Panchro Vintage',
-    aspectRatio: '1.33:1',
-    description: 'Striking black and white portraiture capturing natural sunlight cutting across facial features with tactile film grain and delicate tonality.',
-    synopsis: 'An intimate domestic study exploring memory and quiet grief through the poetic rituals of a quiet afternoon.',
-    awards: ['Show Me Shorts Official Selection 2025'],
-    thumbnail: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1600&auto=format&fit=crop',
-    previewVideo: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
-    videoUrl: 'https://player.vimeo.com/video/76979871?autoplay=1&muted=1&loop=1',
-    embedId: '76979871',
-    stills: [
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1600&auto=format&fit=crop'
-    ],
-    featured: true,
-    tags: ['Monochrome', 'Black & White', 'Cooke Vintage', '1.33:1 Academy'],
-    colorPalette: ['#000000', '#222222', '#555555', '#bbbbbb', '#ffffff']
-  },
-  {
-    id: 'a-century-in-sound',
-    itemNumber: '09',
-    format: 'DOCUMENTARY SERIES',
-    title: 'A CENTURY IN SOUND',
-    year: 2024,
-    category: 'documentary',
-    categoryLabel: 'Documentary Series (Episode 1)',
-    director: 'Paul Casserly',
-    productionCompany: 'RNZ / NZ On Air',
-    camera: 'Canon C500 Mark II',
-    lenses: 'Canon CN-E Primes & Vintage Cooke Lenses',
-    aspectRatio: '16:9',
-    description: 'NZCS Gold Award Winner 2024 for Documentary Cinematography. Exploring 100 years of sound recording and broadcast culture across Aotearoa.',
-    synopsis: 'A deep sensory celebration of the voices, instruments, radio signals, and cultural anthems that defined modern New Zealand.',
-    awards: ['Gold: NZCS Awards 2024 (Documentary)'],
-    laurels: ['NZCS GOLD 2024'],
-    thumbnail: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1600&auto=format&fit=crop',
-    previewVideo: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
-    videoUrl: 'https://player.vimeo.com/video/316284024?autoplay=1&muted=1&loop=1',
-    embedId: '316284024',
-    stills: [
-      'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1600&auto=format&fit=crop'
-    ],
-    featured: true,
-    tags: ['NZCS Gold Award', 'Doc Series', 'RNZ', 'Canon RAW'],
-    colorPalette: ['#1e1b4b', '#312e81', '#4338ca', '#818cf8', '#e0e7ff']
-  },
-  {
-    id: 'chrysanthemum-short',
-    itemNumber: '10',
-    format: 'SHORT FILM',
-    title: 'CHRYSANTHEMUM',
-    year: 2025,
-    category: 'narrative',
-    categoryLabel: 'Short Film',
-    director: 'Angus Benfield',
-    productionCompany: 'Luminous Pictures',
-    camera: 'Arri Alexa Mini LF',
-    lenses: 'Leica R Cine-Mod Vintage Primes',
-    aspectRatio: '2.00:1',
-    description: 'Show Me Shorts Official Selection. Intimate family dinner table drama with low-key emerald shadows and soft candlelight practicals.',
-    synopsis: 'Three generations gather in an ancestral home for a solemn ceremony, where unspoken generational trauma surfaces over the evening.',
-    awards: ['Show Me Shorts Selection', 'Vision Feast Finalist'],
-    laurels: ['SHOW ME SHORTS 2025'],
-    thumbnail: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1600&auto=format&fit=crop',
-    previewVideo: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    videoUrl: 'https://player.vimeo.com/video/76979871?autoplay=1&muted=1&loop=1',
-    embedId: '76979871',
-    stills: [
-      'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1600&auto=format&fit=crop'
-    ],
-    featured: true,
-    tags: ['Short Film', 'Leica R Primes', 'Chiaroscuro', 'Drama'],
-    colorPalette: ['#064e3b', '#047857', '#10b981', '#6ee7b7', '#ecfdf5']
-  },
-  {
-    id: 'the-chills-documentary',
-    itemNumber: '11',
-    format: 'FEATURE DOCUMENTARY',
-    title: 'THE CHILLS: THE TRIUMPH & TRAGEDY OF MARTIN PHILLIPPS',
-    year: 2019,
-    category: 'documentary',
-    categoryLabel: 'Feature Documentary',
-    director: 'Julia Parnell',
-    productionCompany: 'Notable Pictures / SXSW',
-    camera: 'Canon Cinema EOS & Sony Venice',
-    lenses: 'Zeiss Super Speeds & Angenieux Zooms',
-    aspectRatio: '1.85:1',
-    description: 'SXSW Premiere and Silver NZCS Award Winner. The poignant story of Dunedin Sound pioneer Martin Phillipps.',
-    synopsis: 'An unflinching and visually arresting chronicle of musical genius, addiction, and redemption against the coastal beauty of Dunedin.',
-    awards: ['Silver: NZCS Awards 2019 (Documentary)', 'SXSW Official Selection 2019'],
-    laurels: ['SXSW 2019'],
-    thumbnail: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/311749508?autoplay=1&muted=1&loop=1',
-    embedId: '311749508',
-    stills: ['https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['SXSW', 'Silver NZCS', 'Rock Doc']
-  },
-  {
-    id: 'green-short',
-    itemNumber: '12',
-    format: 'SHORT FILM',
-    title: 'GREEN',
-    year: 2020,
-    category: 'narrative',
-    categoryLabel: 'Short Film',
-    director: 'Rachel Antony',
-    camera: 'Arri Alexa Mini',
-    lenses: 'Cooke Speed Panchro',
-    aspectRatio: '16:9',
-    description: 'Quiet domestic suspense drama set in the Waitākere Ranges.',
-    thumbnail: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/76979871?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Short Film', 'Waitakere']
-  },
-  {
-    id: 'liliu-short',
-    itemNumber: '13',
-    format: 'SHORT FILM',
-    title: 'LILIU',
-    year: 2018,
-    category: 'narrative',
-    categoryLabel: 'Short Film',
-    director: 'Jeremiah Tauamiti',
-    camera: 'Arri Alexa Mini',
-    lenses: 'Kowa Anamorphic',
-    aspectRatio: '2.39:1',
-    description: 'Historical Samoan court drama exploring colonial tensions and indigenous sovereignty.',
-    thumbnail: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/76979871?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Samoa', 'Historical Drama', 'Berlin Selection']
-  },
-  {
-    id: 'aupito-doc',
-    itemNumber: '14',
-    format: 'SHORT DOCUMENTARY',
-    title: 'AUPITO – THE HIGH CHIEF',
-    year: 2017,
-    category: 'documentary',
-    categoryLabel: 'Short Documentary',
-    director: 'Tusi Tamasese',
-    camera: 'Canon Cinema EOS',
-    lenses: 'Canon CN-E Primes',
-    aspectRatio: '16:9',
-    description: 'Bronze NZCS Award Winner. Portrait of political leader and High Chief Aupito William Sio.',
-    awards: ['Bronze: NZCS Awards 2017'],
-    thumbnail: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/76979871?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Documentary', 'NZCS Bronze']
-  },
-  {
-    id: 'sextortion-series',
-    itemNumber: '15',
-    format: 'WEBSERIES',
-    title: 'SEXTORTION',
-    year: 2020,
-    category: 'narrative',
-    categoryLabel: 'Webseries / Comedy',
-    director: 'Brendan Donovan',
-    camera: 'Sony FX9',
-    lenses: 'Zeiss CP3',
-    aspectRatio: '16:9',
-    description: 'Satirical black-comedy webseries about political extortion.',
-    thumbnail: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/282875052?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Webseries', 'Comedy']
-  },
-  {
-    id: 'ahika-episode',
-    itemNumber: '16',
-    format: 'ANTHOLOGY EPISODE',
-    title: 'AHIKĀ',
-    year: 2024,
-    category: 'narrative',
-    categoryLabel: 'Anthology Episode',
-    director: 'Renae Maihi',
-    camera: 'Arri Alexa Mini LF',
-    lenses: 'Panavision Primo',
-    aspectRatio: '2.00:1',
-    description: 'Anthology dramatic episode exploring land custodianship and ancestral fires.',
-    thumbnail: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/146022717?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Anthology', 'Te Ao Māori']
-  },
-  {
-    id: 'nz-steel',
-    itemNumber: '17',
-    format: 'COMMERCIAL',
-    title: 'NZ STEEL',
-    year: 2019,
-    category: 'commercial',
-    categoryLabel: 'Commercial / Brand Film',
-    director: 'Lloyd Tawo',
-    camera: 'Canon C500 & Sony Venice',
-    lenses: 'Angenieux Zooms',
-    aspectRatio: '2.39:1',
-    description: 'Axis Awards Cinematography Craft Nominee. High-heat industrial cinematography capturing molten iron ore and massive industrial engineering.',
-    awards: ['Axis Awards Cinematography Craft Finalist'],
-    thumbnail: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/22439234?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Commercial', 'Axis Nominee', 'Industrial']
-  },
-  {
-    id: 'chelsea-jade-low-brow',
-    itemNumber: '18',
-    format: 'MUSIC VIDEO',
-    title: 'CHELSEA JADE – LOW BROW',
-    year: 2018,
-    category: 'music',
-    categoryLabel: 'Music Video',
-    director: 'Alexander Gandar',
-    camera: 'Arri Alexa Mini & 16mm Film',
-    lenses: 'Cooke Speed Panchro',
-    aspectRatio: '4:3',
-    description: 'Choreographic music video in pastel studio aesthetics.',
-    thumbnail: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/76979871?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Music Video', 'Choreography']
-  },
-  {
-    id: 'gangsters-in-paradise',
-    itemNumber: '19',
-    format: 'DOCUMENTARY',
-    title: 'GANGSTERS IN PARADISE – THE DEPORTEES OF TONGA',
-    year: 2020,
-    category: 'documentary',
-    categoryLabel: 'Documentary (VICE / TVNZ)',
-    director: 'Liam van Eeden',
-    camera: 'Canon C500 & Sony FX9',
-    lenses: 'Canon CN-E Primes',
-    aspectRatio: '16:9',
-    description: 'Gripping investigative documentary exploring Tongan deportees returning from the United States.',
-    thumbnail: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/311749508?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['VICE', 'Documentary', 'Tonga']
-  },
-  {
-    id: 'nadia-reid-best-thing',
-    itemNumber: '20',
-    format: 'MUSIC VIDEO',
-    title: 'NADIA REID – BEST THING',
-    year: 2019,
-    category: 'music',
-    categoryLabel: 'Music Video',
-    director: 'Martin Sagadin',
-    camera: 'Arri Alexa Mini',
-    lenses: 'Vintage Leica R Primes',
-    aspectRatio: '16:9',
-    description: 'Moody, poetic coastal cinematography across Dunedin headlands.',
-    thumbnail: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/76979871?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Music Video', 'Folk', 'Leica R']
-  },
-  {
-    id: 'david-dallas-fit-in',
-    itemNumber: '21',
-    format: 'MUSIC VIDEO',
-    title: 'DAVID DALLAS – FIT IN',
-    year: 2017,
-    category: 'music',
-    categoryLabel: 'Music Video',
-    director: 'Alexander Gandar',
-    camera: 'Arri Alexa Mini',
-    lenses: 'Panavision Primo',
-    aspectRatio: '2.39:1',
-    description: 'Hip-hop anthem visual with high-energy urban blocking in South Auckland.',
-    thumbnail: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/22439234?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Music Video', 'Hip Hop']
-  },
-  {
-    id: 'mountain-boy-morning-heat',
-    itemNumber: '22',
-    format: 'MUSIC VIDEO',
-    title: 'MOUNTAIN BOY – MORNING HEAT',
-    year: 2019,
-    category: 'music',
-    categoryLabel: 'Music Video',
-    director: 'Lloyd Tawo',
-    camera: 'Canon C500 Mk II',
-    lenses: 'DZO Vespid Primes',
-    aspectRatio: '2.39:1',
-    description: 'Golden hour rural ballad captured across the central North Island plateau.',
-    thumbnail: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/76979871?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Music Video', 'Golden Hour']
-  },
-  {
-    id: 'so-auckland',
-    itemNumber: '23',
-    format: 'COMMERCIAL',
-    title: 'SO AUCKLAND',
-    year: 2020,
-    category: 'commercial',
-    categoryLabel: 'Commercial Campaign',
-    director: 'Vince McMillan',
-    camera: 'Sony Venice',
-    lenses: 'Zeiss Supreme',
-    aspectRatio: '16:9',
-    description: 'Dynamic urban campaign celebrating the multicultural pulse of Tāmaki Makaurau.',
-    thumbnail: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/282875052?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Commercial', 'Auckland']
-  },
-  {
-    id: 'homebound-season-2',
-    itemNumber: '24',
-    format: 'TV SERIES',
-    title: 'HOMEBOUND 3.0 – SEASON 2',
-    year: 2025,
-    category: 'narrative',
-    categoryLabel: 'TV Comedy Series',
-    director: 'Sam Wang',
-    camera: 'Arri Alexa Mini LF',
-    lenses: 'DZO Vespid Primes',
-    aspectRatio: '16:9',
-    description: 'Hit TV comedy drama exploring generational housing struggles and comedic domestic encounters.',
-    thumbnail: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/282875052?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['TV Series', 'Comedy']
-  },
-  {
-    id: 'z-energy',
-    itemNumber: '25',
-    format: 'COMMERCIAL',
-    title: 'Z ENERGY',
-    year: 2025,
-    category: 'commercial',
-    categoryLabel: 'Commercial',
-    director: 'Hamish Bennett',
-    camera: 'Arri Alexa Mini LF',
-    lenses: 'Panavision Anamorphic',
-    aspectRatio: '2.39:1',
-    description: 'Nationwide cinematic brand commercial highlighting Kiwi journeys, coastal roads, and community.',
-    thumbnail: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop',
-    videoUrl: 'https://player.vimeo.com/video/22439234?autoplay=1&muted=1&loop=1',
-    stills: ['https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop'],
-    featured: false,
-    tags: ['Commercial', 'Panavision', 'Brand Film']
   }
 ];
 

@@ -219,18 +219,12 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
 
   const p01 = slot('01', 0);
   const p02 = slot('02', 1);
-  const p03 = slot('03', 2);
-  const p04 = slot('04', 3);
+  const p03 = slot('04', 2);
+  const p04 = slot('03', 3);
   const p05 = slot('05', 4);
-  const p06 = slot('06', 5);
-  const p07 = slot('07', 6);
-  const p08 = slot('08', 7);
-  const p09 = slot('09', 8);
-  const p10 = slot('10', 9);
 
   const DELAYS: Record<string, number> = {
     '01': 0.25, '02': 0.35, '03': 0.44, '04': 0.52, '05': 0.60,
-    '06': 0.68, '07': 0.76, '08': 0.84, '09': 0.92, '10': 1.00,
   };
 
   return (
@@ -251,7 +245,7 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
         </motion.div>
 
         <div className="flex-1 space-y-4 sm:space-y-6">
-          {/* Top section: [01 large] + [2x2: 02, 03, 04, 05] */}
+          {/* Main 5-card layout: [01 large] + [2x2: 02, 04, 03, 05] */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
             <div className="lg:col-span-6 flex flex-col h-full min-h-[460px] lg:min-h-[500px] xl:min-h-[540px]">
               <GridCard project={p01} orderIndex="01" onSelect={onSelectProject} startDelay={DELAYS['01']} className="h-full" />
@@ -261,10 +255,10 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
                 <GridCard project={p02} orderIndex="02" onSelect={onSelectProject} startDelay={DELAYS['02']} className="h-full" />
               </div>
               <div className="min-h-[220px] lg:min-h-[238px] xl:min-h-[258px]">
-                <GridCard project={p03} orderIndex="03" onSelect={onSelectProject} startDelay={DELAYS['03']} className="h-full" />
+                <GridCard project={p03} orderIndex="04" onSelect={onSelectProject} startDelay={DELAYS['03']} className="h-full" />
               </div>
               <div className="min-h-[220px] lg:min-h-[238px] xl:min-h-[258px]">
-                <GridCard project={p04} orderIndex="04" onSelect={onSelectProject} startDelay={DELAYS['04']} className="h-full" />
+                <GridCard project={p04} orderIndex="03" onSelect={onSelectProject} startDelay={DELAYS['04']} className="h-full" />
               </div>
               <div className="min-h-[220px] lg:min-h-[238px] xl:min-h-[258px]">
                 <GridCard project={p05} orderIndex="05" onSelect={onSelectProject} startDelay={DELAYS['05']} className="h-full" />
@@ -272,31 +266,10 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
             </div>
           </div>
 
-          {/* Bottom section: [2x2: 06, 07, 09, 10] + [08 large] */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
-            <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-              <div className="min-h-[220px] lg:min-h-[238px] xl:min-h-[258px]">
-                <GridCard project={p06} orderIndex="06" onSelect={onSelectProject} startDelay={DELAYS['06']} className="h-full" />
-              </div>
-              <div className="min-h-[220px] lg:min-h-[238px] xl:min-h-[258px]">
-                <GridCard project={p07} orderIndex="07" onSelect={onSelectProject} startDelay={DELAYS['07']} className="h-full" />
-              </div>
-              <div className="min-h-[220px] lg:min-h-[238px] xl:min-h-[258px]">
-                <GridCard project={p09} orderIndex="09" onSelect={onSelectProject} startDelay={DELAYS['09']} className="h-full" />
-              </div>
-              <div className="min-h-[220px] lg:min-h-[238px] xl:min-h-[258px]">
-                <GridCard project={p10} orderIndex="10" onSelect={onSelectProject} startDelay={DELAYS['10']} className="h-full" />
-              </div>
-            </div>
-            <div className="lg:col-span-6 flex flex-col h-full min-h-[460px] lg:min-h-[500px] xl:min-h-[540px]">
-              <GridCard project={p08} orderIndex="08" onSelect={onSelectProject} startDelay={DELAYS['08']} className="h-full" />
-            </div>
-          </div>
-
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.8 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
             className="pt-6 flex flex-col sm:flex-row items-center justify-between text-zinc-400 text-xs font-mono tracking-widest border-t border-zinc-900 mt-8 gap-3"
           >
             <div className="flex items-center gap-3 text-[11px]">

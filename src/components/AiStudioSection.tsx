@@ -20,9 +20,9 @@ export const AiStudioSection: React.FC = () => {
   const [historyImages, setHistoryImages] = useState<GeneratedImageRecord[]>([
     {
       id: 'default-1',
-      url: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1600&auto=format&fit=crop',
-      prompt: 'Cinematic espionage night scene in Wellington rain, blue neon and amber sodium vapor street reflections.',
-      originalPrompt: 'Wellington espionage rain scene',
+      url: '/assets/selected_work_montage_poster.webp',
+      prompt: 'Cinematic visual montage, moody high-contrast lighting and cinematic color grading.',
+      originalPrompt: 'Selected visual montage',
       imageSize: '1K',
       aspectRatio: '16:9',
       filmLook: 'Kodak Vision3 500T',
@@ -33,14 +33,14 @@ export const AiStudioSection: React.FC = () => {
     },
     {
       id: 'default-2',
-      url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
-      prompt: 'Aerochrome infrared surreal landscape in New Zealand Southern Alps, ruby red foliage against obsidian black sky.',
-      originalPrompt: 'Aerochrome infrared New Zealand landscape',
+      url: '/assets/travel_akoso.webp',
+      prompt: 'Atmospheric landscape in Akosombo, cinematic wide angle and natural golden hour lighting.',
+      originalPrompt: 'Akosombo travel landscape',
       imageSize: '2K',
       aspectRatio: '16:9',
-      filmLook: 'Aerochrome Infrared (LLoyd Tawo Films Style)',
-      camera: 'Custom Infrared Full Frame',
-      lens: 'Leica R Vintage',
+      filmLook: 'Cinematic 35mm Film',
+      camera: 'Cinema Full Frame',
+      lens: 'Cinema Primes',
       timestamp: 'Sample',
       model: 'gemini-3-pro-image-preview'
     }

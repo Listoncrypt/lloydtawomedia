@@ -13,6 +13,7 @@ export interface ProjectVideo {
   url: string;
   title?: string;
   poster?: string;
+  description?: string;
   orientation?: 'landscape' | 'portrait';
   position: 'before-stills' | 'after-stills';
   revealStills?: string[];

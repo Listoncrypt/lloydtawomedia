@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Project, ProjectVideo } from '../types';
 import { LaurelBadge } from './LaurelBadge';
 import { ArrowLeft, Play } from 'lucide-react';
+import { ExpandableDescription } from './ExpandableDescription';
 
 interface ProjectDetailPageProps {
   project: Project;
@@ -74,6 +75,15 @@ const SectionVideo: React.FC<{
           </button>
         )}
       </div>
+
+      {video.description && (
+        <div className="border border-zinc-900 bg-zinc-950/70 p-4">
+          <ExpandableDescription
+            description={video.description}
+            label={video.title ? `${video.title} — NOTES` : 'VIDEO DESCRIPTION'}
+          />
+        </div>
+      )}
 
       {hasPlayed && revealStills.length > 0 && (
         <div
@@ -345,6 +355,15 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
             )}
           </div>
         </div>
+
+        {project.description && (
+          <div className="mt-6 sm:mt-8 border border-zinc-800 bg-zinc-950/70 p-5 sm:p-7">
+            <ExpandableDescription
+              description={project.description}
+              label="PROJECT OVERVIEW"
+            />
+          </div>
+        )}
       </section>
 
       {/* Stills & media gallery */}
